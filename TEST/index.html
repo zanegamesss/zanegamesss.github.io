@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokemon Wheel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="app">
+      <div class="wheel-wrap">
+        <span class="pointer" aria-hidden="true"></span>
+        <button id="wheel-button" class="wheel-button" type="button" aria-label="Spin the wheel">
+          <canvas id="wheel" width="520" height="520" aria-hidden="true"></canvas>
+        </button>
+        <div
+          id="winner-overlay"
+          class="winner-overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="winner-title"
+          hidden
+        >
+          <div class="winner-card">
+            <h2 id="winner-title">Congruts!</h2>
+            <p id="winner-pokemon" class="winner-pokemon"></p>
+            <button id="close-winner" type="button">Continue</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
